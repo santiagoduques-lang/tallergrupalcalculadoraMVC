@@ -209,12 +209,32 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
         // TODO add your handling code here:
+         double numero1 = Double.parseDouble(txtNumero1.getText());
+    double numero2 = Double.parseDouble(txtNumero2.getText());
+
+    double resultado = controlador.multiplicar(numero1, numero2);
+
+    txtResultado.setText(String.valueOf(resultado));
         
     
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
         // TODO add your handling code here:
+          double numero1 = Double.parseDouble(txtNumero1.getText());
+    double numero2 = Double.parseDouble(txtNumero2.getText());
+
+    if (numero2 == 0) {
+
+        JOptionPane.showMessageDialog(this,
+                "No se puede dividir entre cero");
+
+    } else {
+
+        double resultado = controlador.dividir(numero1, numero2);
+
+        txtResultado.setText(String.valueOf(resultado));
+    }
  
     }//GEN-LAST:event_btnDividirActionPerformed
 
