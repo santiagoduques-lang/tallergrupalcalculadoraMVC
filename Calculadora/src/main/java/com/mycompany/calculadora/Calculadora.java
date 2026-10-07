@@ -4,6 +4,9 @@
 
 package com.mycompany.calculadora;
 
+import javax.swing.JFrame;
+import vista.interfaz_Grafica;
+
 /**
  *
  * @author orian
@@ -11,7 +14,17 @@ package com.mycompany.calculadora;
  */
 public class Calculadora {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+      public static void main(String[] args) {
+
+    JFrame frame = new JFrame("Calculadora MVC");
+        interfaz_Grafica panel = new interfaz_Grafica();
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setContentPane(panel);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
-}
+    }
+
+

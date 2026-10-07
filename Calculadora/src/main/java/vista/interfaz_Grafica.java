@@ -10,7 +10,7 @@ package vista;
  */
 import controlador.CalculadoraControlador;
 
-public class interfaz_Grafica extends javax.swing.JFrame {
+public class interfaz_Grafica extends javax.swing.JPanel {
     CalculadoraControlador controlador = new CalculadoraControlador();
 
     /**
