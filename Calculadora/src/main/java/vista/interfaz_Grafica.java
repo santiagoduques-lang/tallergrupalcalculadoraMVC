@@ -8,7 +8,10 @@ package vista;
  *
  * @author santi
  */
-public class interfaz_Grafica extends javax.swing.JPanel {
+import controlador.CalculadoraControlador;
+
+public class interfaz_Grafica extends javax.swing.JFrame {
+    CalculadoraControlador controlador = new CalculadoraControlador();
 
     /**
      * Creates new form interfaz_Grafica
@@ -16,6 +19,7 @@ public class interfaz_Grafica extends javax.swing.JPanel {
     public interfaz_Grafica() {
         initComponents();
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -226,7 +230,7 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     if (numero2 == 0) {
 
-        JOptionPane.showMessageDialog(this,
+         javax.swing.JOptionPane.showMessageDialog(this,
                 "No se puede dividir entre cero");
 
     } else {
@@ -244,7 +248,7 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     if (numero1 < 0) {
 
-        JOptionPane.showMessageDialog(this,
+        javax.swing.JOptionPane.showMessageDialog(this,
                 "No se puede calcular la raíz cuadrada de un número negativo");
 
     } else {
@@ -272,7 +276,7 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     if (numero1 <= 0) {
 
-        JOptionPane.showMessageDialog(this,
+        javax.swing.JOptionPane.showMessageDialog(this,
                 "El número debe ser mayor que cero");
 
     } else {
@@ -308,4 +312,4 @@ public class interfaz_Grafica extends javax.swing.JPanel {
     private javax.swing.JTextField txtNumero2;
     private javax.swing.JTextField txtResultado;
     // End of variables declaration//GEN-END:variables
-
+}
