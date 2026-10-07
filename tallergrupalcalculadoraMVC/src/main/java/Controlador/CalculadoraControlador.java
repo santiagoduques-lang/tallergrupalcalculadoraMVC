@@ -41,11 +41,24 @@ public double multiplicar(double numero1, double numero2) {
         return multiplicacion.calcular();
     }
 
-    public double dividir(double numero1, double numero2) {
+public double dividir(double numero1, double numero2) {
 
         Division division = new Division(numero1, numero2);
 
         return division.calcular();
     }
 
+public double raizCuadrada(double numero1) {
+
+        RaizCuadrada raiz = new RaizCuadrada(numero1, 0);
+
+        return raiz.calcular();
+    }
+
+    public double raizCubica(double numero1) {
+
+        RaizCubica raiz = new RaizCubica(numero1, 0);
+
+        return raiz.calcular();
+    }
 }}
