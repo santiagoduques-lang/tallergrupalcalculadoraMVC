@@ -34,4 +34,18 @@ public double restar(double numero1, double numero2) {
         return resta.calcular();
     }
 
+public double multiplicar(double numero1, double numero2) {
+
+        Multiplicacion multiplicacion = new Multiplicacion(numero1, numero2);
+
+        return multiplicacion.calcular();
+    }
+
+    public double dividir(double numero1, double numero2) {
+
+        Division division = new Division(numero1, numero2);
+
+        return division.calcular();
+    }
+
 }}
