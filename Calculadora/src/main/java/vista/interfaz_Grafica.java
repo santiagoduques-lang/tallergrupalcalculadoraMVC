@@ -268,6 +268,19 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     private void btnLogaritmoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogaritmoActionPerformed
         // TODO add your handling code here:
+          double numero1 = Double.parseDouble(txtNumero1.getText());
+
+    if (numero1 <= 0) {
+
+        JOptionPane.showMessageDialog(this,
+                "El número debe ser mayor que cero");
+
+    } else {
+
+        double resultado = controlador.logaritmoNatural(numero1);
+
+        txtResultado.setText(String.valueOf(resultado));
+    }
        
     }//GEN-LAST:event_btnLogaritmoActionPerformed
 
