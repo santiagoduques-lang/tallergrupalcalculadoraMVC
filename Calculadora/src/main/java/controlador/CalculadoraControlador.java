@@ -27,4 +27,12 @@ public class CalculadoraControlador {
         Operacion operacion = new Suma(numero1, numero2);
 
         return operacion.calcular();
-}}
+}
+
+ public double restar(double numero1, double numero2) {
+
+        Operacion operacion = new Resta(numero1, numero2);
+
+        return operacion.calcular();
+    }
+}
