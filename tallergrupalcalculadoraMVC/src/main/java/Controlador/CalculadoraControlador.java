@@ -26,5 +26,12 @@ public class CalculadoraControlador {
 
         return suma.calcular();
     }
+    
+public double restar(double numero1, double numero2) {
+
+        Resta resta = new Resta(numero1, numero2);
+
+        return resta.calcular();
+    }
 
 }}
