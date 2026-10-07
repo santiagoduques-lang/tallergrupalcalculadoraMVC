@@ -35,4 +35,10 @@ public class CalculadoraControlador {
 
         return operacion.calcular();
     }
+     public double multiplicar(double numero1, double numero2) {
+
+        Operacion operacion = new Multiplicacion(numero1, numero2);
+
+        return operacion.calcular();
+    }
 }
