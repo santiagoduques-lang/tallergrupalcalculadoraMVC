@@ -48,5 +48,18 @@ public class CalculadoraControlador {
 
         return operacion.calcular();
     }
+    public double raizCuadrada(double numero1) {
+
+        Operacion operacion = new RaizCuadrada(numero1, 0);
+
+        return operacion.calcular();
+    }
+
+    public double raizCubica(double numero1) {
+
+        Operacion operacion = new RaizCubica(numero1, 0);
+
+        return operacion.calcular();
+    }
 
 }
