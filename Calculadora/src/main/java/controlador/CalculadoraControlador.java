@@ -61,5 +61,11 @@ public class CalculadoraControlador {
 
         return operacion.calcular();
     }
+    public double logaritmoNatural(double numero1) {
+
+        Operacion operacion = new LogaritmoNatural(numero1, 0);
+
+        return operacion.calcular();
+    }
 
 }
