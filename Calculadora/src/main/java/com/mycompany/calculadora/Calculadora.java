@@ -6,6 +6,7 @@ package com.mycompany.calculadora;
 
 /**
  *
+ * @author orian
  * @author santi
  */
 public class Calculadora {

@@ -8,7 +8,7 @@ package vista;
  *
  * @author santi
  */
-import controlador.CalculadoraControlador;
+import Controlador.CalculadoraControlador;
 import javax.swing.JOptionPane;
 
 public class CalculadoraVista extends javax.swing.JFrame {
