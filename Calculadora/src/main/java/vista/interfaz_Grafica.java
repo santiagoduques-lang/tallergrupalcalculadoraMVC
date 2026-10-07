@@ -189,15 +189,27 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
         // TODO add your handling code here:
+        double numero1 = Double.parseDouble(txtNumero1.getText());
+    double numero2 = Double.parseDouble(txtNumero2.getText());
+
+    double resultado = controlador.sumar(numero1, numero2);
+
+    txtResultado.setText(String.valueOf(resultado));
 
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
- 
+ double numero1 = Double.parseDouble(txtNumero1.getText());
+    double numero2 = Double.parseDouble(txtNumero2.getText());
+
+    double resultado = controlador.restar(numero1, numero2);
+
+    txtResultado.setText(String.valueOf(resultado));
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
         // TODO add your handling code here:
+        
     
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
