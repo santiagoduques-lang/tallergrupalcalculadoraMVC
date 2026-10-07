@@ -61,4 +61,12 @@ public double raizCuadrada(double numero1) {
 
         return raiz.calcular();
     }
+    
+public double logaritmoNatural(double numero1) {
+
+        LogaritmoNatural logaritmo = new LogaritmoNatural(numero1, 0);
+
+        return logaritmo.calcular();
+    }
+}
 }}
