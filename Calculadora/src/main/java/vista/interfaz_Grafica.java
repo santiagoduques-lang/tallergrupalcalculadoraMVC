@@ -240,11 +240,29 @@ public class interfaz_Grafica extends javax.swing.JPanel {
 
     private void btnRaizCuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCuadradaActionPerformed
         // TODO add your handling code here:
+        double numero1 = Double.parseDouble(txtNumero1.getText());
+
+    if (numero1 < 0) {
+
+        JOptionPane.showMessageDialog(this,
+                "No se puede calcular la raíz cuadrada de un número negativo");
+
+    } else {
+
+        double resultado = controlador.raizCuadrada(numero1);
+
+        txtResultado.setText(String.valueOf(resultado));
+    }
    
     }//GEN-LAST:event_btnRaizCuadradaActionPerformed
 
     private void btnRaizCubicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCubicaActionPerformed
         // TODO add your handling code here:
+          double numero1 = Double.parseDouble(txtNumero1.getText());
+
+    double resultado = controlador.raizCubica(numero1);
+
+    txtResultado.setText(String.valueOf(resultado));
           
     }//GEN-LAST:event_btnRaizCubicaActionPerformed
 
