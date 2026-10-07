@@ -41,4 +41,12 @@ public class CalculadoraControlador {
 
         return operacion.calcular();
     }
+     
+       public double dividir(double numero1, double numero2) {
+
+        Operacion operacion = new Division(numero1, numero2);
+
+        return operacion.calcular();
+    }
+
 }
