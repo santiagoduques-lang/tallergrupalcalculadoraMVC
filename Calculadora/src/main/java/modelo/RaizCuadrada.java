@@ -14,6 +14,7 @@ public class RaizCuadrada extends Operacion {
         super(numero1, numero2);
     }
 
+    @Override
     public double calcular() {
         return Math.sqrt(numero1);
     }

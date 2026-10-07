@@ -32,5 +32,8 @@ public class Operacion {
     public void setNumero2(double numero2) {
         this.numero2 = numero2;
     }
-     
+    
+      public double calcular() {
+        return 0;
+    }
 }

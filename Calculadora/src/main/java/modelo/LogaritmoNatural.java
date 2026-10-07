@@ -14,6 +14,7 @@ public class LogaritmoNatural extends Operacion {
         super(numero1, numero2);
     }
 
+    @Override
     public double calcular() {
         return Math.log(numero1);
     }
